@@ -1,4 +1,4 @@
-package winzinger.samples;
+package winzinger.samples.restdocs;
 
 import javax.inject.Named;
 import javax.ws.rs.GET;
@@ -7,6 +7,8 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.core.MediaType;
 import java.time.LocalDate;
 
+// @RestController
+// @RequestMapping(value = "/api/v1")
 @Named
 @Path("/api/v1/")
 public class CustomerController {
@@ -17,6 +19,7 @@ public class CustomerController {
         return "pong";
     }
 
+    // @RequestMapping(value = "/customer", method = RequestMethod.GET, produces = "application/json")
     @Path("/customer")
     @GET
     @Produces(value = MediaType.APPLICATION_JSON)

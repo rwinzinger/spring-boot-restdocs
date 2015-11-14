@@ -1,4 +1,4 @@
-package winzinger.samples;
+package winzinger.samples.restdocs;
 
 import java.time.LocalDate;
 import java.util.Date;
